@@ -12,7 +12,7 @@
   "scripts": {
     "compile": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol",
     "build": "tsc --build",
-    "deploy": "yarn build && node dist/deploy.js",
-    "encrypt": "node dist/encryptKey.js"
+    "deploy": "ts-node deploy.ts",
+    "encrypt": "ts-node encryptKey.ts"
   }
 }
